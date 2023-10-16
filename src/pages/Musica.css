@@ -1,0 +1,32 @@
+
+  .div-pagina-musica ul{
+    display: inline-flex;
+    flex-wrap: wrap;
+    padding: 5 px;
+    list-style: none outside none;
+  }
+
+  .div-pagina-musica ul li{
+    border: solid 1px white;
+    outline: auto;
+    padding: 5px;
+    margin: 5px;
+    background-color: rgba(230, 230, 230, 0.731);
+    flex: 1; /* Distribuir espaço igualmente entre os itens */
+    border-radius: 1.5rem;
+  }
+
+  .tituloEscuteNossoSom{
+    font-size: 48px;
+    padding-left: 300px;
+  }
+
+  .soundcloudSection{
+    display: flex;
+    align-items: center;
+  }
+
+  .imagemMusicaInterna{
+    width: 400px;
+    height: 400px;
+  }
