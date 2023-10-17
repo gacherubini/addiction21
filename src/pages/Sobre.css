@@ -1,14 +1,6 @@
 
   
-  /* Style for the description text */
-  .sobre-descricao p {
-    font-size: 23px;
-    line-height: 1.5;
-    margin-bottom: 20px;
-    color: black;
-    text-decoration: bold;
-  }
-  
+
   /* Style for the author sections */
   .author-section {
     display: flex;

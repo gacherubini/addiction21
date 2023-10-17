@@ -1,7 +1,7 @@
-import "./Sobre.css"; // Importe seu arquivo CSS para aplicar estilos
 import {FaInstagramSquare, FaTwitter, FaTiktok} from "react-icons/fa"
 import React , { useEffect, useState } from "react";
 import Constants from "../Constants";
+import "./Sobre.css"; // Importe seu arquivo CSS para aplicar estilos
 
 const gui = "public/guilherme.jpg";
 const daluz = "public/daluz.jpg";
@@ -32,7 +32,7 @@ function Sobre() {
        <div>
             <h1>Sobre Nos</h1>
           </div>
-      <div className="sobre-descricao">
+      <div>
         <p>
           Eletrônica Addiction21: Explorando Novos Horizontes Sonoros com Guilherme Cherubini e Daluz. A cena da música eletrônica está sempre evoluindo, e entre as diversas vertentes que se desenvolvem, há um projeto que merece destaque especial: Eletrônica Addiction21. Este projeto é a colaboração única entre os talentosos músicos Guilherme Cherubini e Daluz, que têm cativado audiências em todo o mundo com sua música eletrônica inovadora e envolvente.
         </p>

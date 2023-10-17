@@ -10,16 +10,16 @@ body{
 }
 
 main{
-  margin-right: 70px;
-  margin-left: 70px;
-  margin-top: 5pxpx;
-  margin-bottom: 30px;
+  margin-right: 12%;
+  margin-left: 12%;
+  padding-left: 2%;
+  padding-right: 2%;
+  margin-bottom: 2%;
   border-radius: 20px;
-  padding-left: 40px;
-  padding-right: 40px;
-  padding-top: 5px;
-  padding-bottom: 0px;
-}
+  padding-top: 1%;
+  padding-bottom: 1%;
+  background: rgba(255, 255, 255, 0.4 )    /*  70% opaque green */ 
+  }
 
 header {
   height: 100px; /* replace with actual header height */
@@ -101,5 +101,15 @@ h1{
   font-family: Zilla Slab;
   text-align: center;
   text-transform: uppercase;
+}
+
+p{
+  font-weight: 600  ;
+  font-size: 18px;
+}
+
+.SoundCloud{
+  margin:auto;
+  width: 100%;
 }
 

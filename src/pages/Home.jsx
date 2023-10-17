@@ -2,6 +2,7 @@ import { useNavigate } from "react-router-dom";
 import React , { useEffect, useState } from "react";
 import "./Home.css"
 import Constants from "../Constants";
+import AddicastSoundCloudIFrame from "./AddicastSoundCloudIFrame";
 
 
 function Home() {
@@ -36,7 +37,16 @@ function Home() {
   return (
     <div className="div-pagina-home">
         <div>
-            <h1>Shows</h1>
+          <h1>Addicast</h1>
+          <p>O Addicast é um projeto da Addiction 21 que visa fortalecer a cena da música eletrônica na capital e região, com a promoção de eventos
+             e artistas. Você escutará aqui sets e mixes dos nossos residentes e de diversos outros DJ's 
+             reconhecidos na indústria da música eletrônica. 
+             /n/n
+             Acompanhe cada história musical atrelada à identidade de cada DJ apresentado.</p>
+          
+          <AddicastSoundCloudIFrame/>
+           
+          <h1>Shows</h1>
           </div>
             {shows.map((show) => (
              <ul>
@@ -51,7 +61,7 @@ function Home() {
                    </div>
               </li>
               </ul>
-            ))}
+            ))} 
     </div>
     
     )
