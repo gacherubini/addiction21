@@ -114,15 +114,28 @@ p{
 }
 
 .ContactForm{
-  text-align: center;
   padding-bottom: 50px;
+  text-align: center;
+}
+.div-form {
+  margin: 0 auto;
+  width: 70%;
+  max-width: 400px;
 }
 
-form.col{
-  padding: 15px;
-  display: flex;
-  flex-direction: column;
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
 
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
 }
 
 .input{
