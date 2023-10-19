@@ -47,6 +47,7 @@ if (error) return <p className="errorMensagem">{Constants.GENERIC_ERROR_MESSAGE}
         Se quiser enviar a sua track pra gente <b>clique na imagem abaixo para entrar em contato:</b></p>
       <div className="div-div-records">
       <img className="imagemRecords" src="public/records.png" width="500px" onClick={routeChange} />
+
       </div>
           </div>
             <h1>Musicas Lançamento</h1>

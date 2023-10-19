@@ -6,7 +6,7 @@ function MenuHeader() {
     return( 
       <nav >
         <div className="addictionHomeImage">
-            <Link to="/"><img width={200} src={img}/></Link>
+            <Link to="/"><img className="HomeImagem" width={200} src={img}/></Link>
         </div>
         <ul>
           <li>

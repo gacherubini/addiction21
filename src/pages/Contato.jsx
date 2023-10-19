@@ -24,7 +24,7 @@ function Contato() {
       <div className="div-form">
         <form ref={form} onSubmit={sendEmail} className="col">
           <div className="form-group">
-            <label htmlFor="user_name">Name</label>
+            <label htmlFor="user_name">Nome Artistico</label>
             <input
               type="text"
               name="user_name"
@@ -42,7 +42,7 @@ function Contato() {
             />
           </div>
           <div className="form-group">
-            <label htmlFor="message">Message</label>
+            <label htmlFor="message">Mensagem</label>
             <textarea
               name="message"
               id="message"

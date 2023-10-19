@@ -60,7 +60,6 @@ function Home() {
                   <p>Artista: {show.artistas}</p>
                   <p>Data: {show.data}</p>
                 </div>
-             
               </li>
               </ul>
             ))} 

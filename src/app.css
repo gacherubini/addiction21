@@ -164,3 +164,31 @@ p{
   cursor: pointer;
 }
 
+.HomeImagem{
+  cursor: pointer;
+  transition:transform 0.25s ease;
+}
+
+.HomeImagem:hover{
+  -webkit-transform:scale(1.5); 
+  transform:scale(1.1);
+}
+
+.artistas, .musica, .contato{
+  transition: all 500ms;
+  font-size:14px;
+}
+
+.artistas:hover{
+  font-size:25px;
+}
+
+.musica:hover{
+  font-size:25px;
+}
+
+.contato:hover{
+  font-size:25px;
+}
+
+
