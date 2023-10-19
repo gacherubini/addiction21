@@ -1,6 +1,7 @@
 import React , { useEffect, useState } from "react";
 import {FaSoundcloud} from "react-icons/fa"
 import Constants from "../Constants";
+import { useNavigate } from "react-router-dom";
 
 
 import "./Musica.css"
@@ -26,14 +27,29 @@ useEffect(() => {
 
 
 
+let navigate = useNavigate(); 
+const routeChange = () =>{ 
+  let path = `/contato`; 
+  navigate(path);
+} 
+
 if (loading) return <img className="imageLoading" src={"public/loading.gif"}/>;
 if (error) return <p className="errorMensagem">{Constants.GENERIC_ERROR_MESSAGE}</p>;
 
   return (
+    
     <div className="div-pagina-musica">
-      <div>
-            <h1>Musicas Lançamento</h1>
+      <h1>Addiction Records</h1>
+      <div className="div-records">
+      <p>A "Addiction 21 Records".
+        É uma gravadora que vai integrar a nossa marca com lançamentos esporádicos de tracks dos gêneros: 
+        Minimal, Deep Tech, Rominimal, Deep House e demais vertentes do House music.
+        Se quiser enviar a sua track pra gente <b>clique na imagem abaixo para entrar em contato:</b></p>
+      <div className="div-div-records">
+      <img className="imagemRecords" src="public/records.png" width="500px" onClick={routeChange} />
+      </div>
           </div>
+            <h1>Musicas Lançamento</h1>
           <ul>
             {musicas.map((musica) => (
               <li>

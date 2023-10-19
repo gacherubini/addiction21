@@ -8,7 +8,6 @@
 
   .div-pagina-musica ul li{
     border: solid 1px white;
-    outline: auto;
     padding: 5px;
     margin: 5px;
     background-color: rgba(230, 230, 230, 0.731);
@@ -30,3 +29,32 @@
     width: 400px;
     height: 400px;
   }
+
+.imagemRecords{
+  border-radius: 40px;
+  cursor: pointer;
+  transition:transform 0.25s ease;
+  justify-content: center;
+  margin: auto;
+  display: block;
+}
+
+.imagemRecords:hover{
+  -webkit-transform:scale(1.5); /* or some other value */
+  transform:scale(1.1);
+}
+
+.div-records{
+  background-color: rgba(230, 230, 230, 0.731);
+  border-radius: 20px;
+  margin-bottom: 3%;  
+  padding-bottom: 50px;
+  padding-top: 30px;
+  padding-left: 10px;
+}
+
+.div-div-records{
+  display: flex;
+  justify-content: space-around;
+}
+

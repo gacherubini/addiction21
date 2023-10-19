@@ -36,27 +36,20 @@ function Home() {
 
   return (
     <div className="div-pagina-home">
-      <div className="sobreNosHome">
+      <div>
        <h1>Sobre Nos</h1>
         <p>
         A Addiction21 é uma label natural de Porto Alegre, BR (🇧🇷), que visa fortalecer a cena da música eletrônica na capital e região, com a promoção de eventos e artistas. Você escutará aqui sets e mixes dos nossos residentes e de diversos outros DJ's reconhecidos na indústria da música eletrônica. Acompanhe cada história musical atrelada à identidade de cada DJ apresentado.
-        </p>
+        </p> 
         <div>
-        <img className="imagemSobre" src="public/festaImagem.jpg" width="500px"/>
-        <img className="imagemSobre" src="public/records.png" width="500px"/>
-        </div>
-        
       </div>
-        <div>
           <h1>Addicast</h1>
           <p>O Addicast é um projeto da Addiction 21 que visa fortalecer a cena da música eletrônica na capital e região, com a promoção de eventos
              e artistas. Você escutará aqui sets e mixes dos nossos residentes e de diversos outros DJ's 
              reconhecidos na indústria da música eletrônica. 
              /n/n
              Acompanhe cada história musical atrelada à identidade de cada DJ apresentado.</p>
-          
           <AddicastSoundCloudIFrame/>
-           
           <h1>Shows</h1>
           </div>
             {shows.map((show) => (
@@ -67,9 +60,7 @@ function Home() {
                   <p>Artista: {show.artistas}</p>
                   <p>Data: {show.data}</p>
                 </div>
-                  <div className="div-buttonVerMais">
-                    <button onClick={routeChange} className="buttonVerMais">Ver Mais</button>
-                   </div>
+             
               </li>
               </ul>
             ))} 
