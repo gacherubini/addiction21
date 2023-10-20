@@ -2,32 +2,28 @@
   .div-pagina-musica ul{
     display: inline-flex;
     flex-wrap: wrap;
-    padding: 5 px;
     list-style: none outside none;
+    padding-right: 20px;
   }
 
   .div-pagina-musica ul li{
-    border: solid 1px white;
-    padding: 5px;
+    padding: 10px;
     margin: 5px;
     background-color: rgba(230, 230, 230, 0.731);
     flex: 1; /* Distribuir espaço igualmente entre os itens */
-    border-radius: 1.5rem;
-  }
-
-  .tituloEscuteNossoSom{
-    font-size: 48px;
-    padding-left: 300px;
-  }
-
-  .soundcloudSection{
-    display: flex;
-    align-items: center;
   }
 
   .imagemMusicaInterna{
-    width: 400px;
-    height: 400px;
+    width: 250px;
+    height: 250px;
+    transition:transform 0.25s ease;
+
+  }
+
+  .imagemMusicaInterna:hover{
+    -webkit-transform:scale(1.5); /* or some other value */
+    transform:scale(1.1);
+    cursor: pointer;
   }
 
 .imagemRecords{

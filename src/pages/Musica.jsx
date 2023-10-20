@@ -47,29 +47,24 @@ if (error) return <p className="errorMensagem">{Constants.GENERIC_ERROR_MESSAGE}
         Se quiser enviar a sua track pra gente <b>clique na imagem abaixo para entrar em contato:</b></p>
       <div className="div-div-records">
       <img className="imagemRecords" src="public/records.png" width="500px" onClick={routeChange} />
-
       </div>
           </div>
             <h1>Musicas Lançamento</h1>
           <ul>
             {musicas.map((musica) => (
               <li>
+                      <a  href="https://soundcloud.com/addictionlabel21">
+                      <img 
+                    className="imagemMusicaInterna"
+                     src={musica.imagem}
+                   />   
+              </a> 
                   <h2>{musica.nome}</h2> 
                   <p>Artista: {musica.artistas}</p>
                   <p>Data: {musica.data}</p>
-                  <img 
-                    className="imagemMusicaInterna"
-                     src={musica.imagem}
-                   />
               </li>
             ))}
           </ul>
-            <div className="soundcloudSection">
-          <h3 className="tituloEscuteNossoSom">Escute nosso som no SoundCloud</h3>
-              <a  href="https://soundcloud.com/addictionlabel21">
-              <FaSoundcloud size={100} />     
-              </a> 
-            </div> 
     </div>
   );
 }
