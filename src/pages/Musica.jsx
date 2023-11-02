@@ -1,5 +1,4 @@
 import React , { useEffect, useState } from "react";
-import {FaSoundcloud} from "react-icons/fa"
 import Constants from "../Constants";
 import { useNavigate } from "react-router-dom";
 
@@ -53,7 +52,7 @@ if (error) return <p className="errorMensagem">{Constants.GENERIC_ERROR_MESSAGE}
           <ul>
             {musicas.map((musica) => (
               <li>
-                      <a  href="https://soundcloud.com/addictionlabel21">
+                      <a  href={musica.link}>
                       <img 
                     className="imagemMusicaInterna"
                      src={musica.imagem}

@@ -7,25 +7,7 @@ const gui = "public/guilherme.jpg";
 const daluz = "public/daluz.jpg";
 
 function Sobre() {
-  const [ShowsDataNew, setShowData] = useState([]); // State to store the fetched data
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(null);
-  
-  useEffect(() => {
-    fetch('http://localhost:3000/showAntigo')
-    .then(response => response.json())
-      .then(data => {
-        setShowData(data)
-        setLoading(false);
-      })
-      .catch(error => {
-        setError(error);
-        setLoading(false);
-      });
-  }, []);
-  
-  if (loading) return <img className="imageLoading" src={"public/loading.gif"}/>;
-  if (error) return <p className="errorMensagem">{Constants.GENERIC_ERROR_MESSAGE}</p>;
+ 
   
   return (
     <div className="div-pagina-home">
@@ -72,24 +54,6 @@ function Sobre() {
             </div>
         </div>
       </div>
-      {/* <div className="div-pagina-shows">
-        <div>
-            <h1>Shows Antigos</h1>
-          </div>
-         <ul className="lista-toda-show">
-        {ShowsDataNew.map((show) => (
-          <li>
-            <h2>{show.nome}</h2>
-            <p>Data: {show.data}</p>
-            <p>Artista: {show.artistas}</p>
-            <img 
-            className="imagemShowInterna"
-            src={show.imagem}
-             />
-          </li>
-        ))}
-        </ul>
-      </div> */}
     </div>
     
   );
