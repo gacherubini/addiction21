@@ -10,7 +10,7 @@ function MenuHeader() {
         </div>
         <ul>
           <li>
-            <Link  className = "artistas" to="/artistas">Artistas </Link>
+            <Link  className = "equipe" to="/equipe">Equipe </Link>
           </li>
           <li>
             <Link  className = "musica" to="/musica">Nossa música</Link>

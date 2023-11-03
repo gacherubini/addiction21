@@ -20,11 +20,11 @@ function Contato() {
 
   return (
     <div className='ContactForm'>
-      <h1>Contato</h1>
+      <h1>Nos envie uma mensagem</h1>
       <div className="div-form">
         <form ref={form} onSubmit={sendEmail} className="col">
           <div className="form-group">
-            <label htmlFor="user_name">Nome Artistico</label>
+            <label htmlFor="user_name">Nome Artístico</label>
             <input
               type="text"
               name="user_name"
@@ -33,7 +33,7 @@ function Contato() {
             />
           </div>
           <div className="form-group">
-            <label htmlFor="user_email">Email</label>
+            <label htmlFor="user_email">E-mail</label>
             <input
               type="email"
               name="user_email"
@@ -49,7 +49,7 @@ function Contato() {
               className='input-message'
             />
           </div>
-          <button className='input-button' type="submit">Submit</button>
+          <button className='input-button' type="submit">Enviar Mensagem</button>
         </form>
       </div>
     </div>

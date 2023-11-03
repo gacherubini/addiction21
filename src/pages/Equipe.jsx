@@ -1,18 +1,16 @@
 import {FaInstagramSquare, FaTwitter, FaTiktok} from "react-icons/fa"
 import React , { useEffect, useState } from "react";
 import Constants from "../Constants";
-import "./Artistas.css"; // Importe seu arquivo CSS para aplicar estilos
+import "./Equipe.css"; // Importe seu arquivo CSS para aplicar estilos
 
 const gui = "public/guilherme.jpg";
 const daluz = "public/daluz.jpg";
 
 function Sobre() {
- 
-  
   return (
     <div className="div-pagina-home">
        <div>
-            <h1>Artistas</h1>
+            <h1>Nossa Equipe</h1>
           </div>
       <div className="author-section">
         <div className="author">
