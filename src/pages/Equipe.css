@@ -13,7 +13,7 @@
     border-radius: 2rem;
     padding: 20px;
     margin: 10px;
-    background-color: rgba(230, 230, 230, 0.731);
+    background-color: rgba(230, 230, 230, 0.531);
   }
   /* Style for author names */
   .author h2 {
@@ -34,36 +34,27 @@
     line-height: 1.4;
   }
 
-  .insta-section-cherubini{
+  .socialMedia-section{
     display: flex;
     justify-content: space-around;
   }
 
-  .insta-section-daluz{
-    display: flex;
-    justify-content: space-around;
+
+  .instagram{
+    color: purple;
   }
 
-  .div-pagina-shows ul{
-    display: flex;
-    flex-wrap: wrap;
-    padding-top: 5px;
-    list-style: none outside none;
+  .soundcloud{
+    background:linear-gradient(120deg, #ff8800, #ff3300);
+    color: white;
+    border-radius: 20px;
+    }
+
+  .youtube{
+    color: RED;
   }
 
-  .div-pagina-shows ul li{
-    border: solid 1px white;
-    outline: auto;
-    padding: 5px;
-    margin: 5px;
-    background-color: rgba(230, 230, 230, 0.731);
-    flex: 1; /* Distribuir espaço igualmente entre os itens */
-    border-radius: 1.5rem;
-  }
 
-  .imagemShowInterna{
-    width: 300px;
-    height: 300px;
-  }
 
+  
  
