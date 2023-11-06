@@ -55,9 +55,37 @@
     height: 1080;
 }
 
+.addicast {
+    padding: 0;
+}
 
+.addicast-content {
+    background-color: #343434;
+    color: white;
+    margin: 5px;
+    padding: 8px;
+    height: 100%;
+}
 
-
+.addicast-content-image {
+    width: 100%;
+}
+.addicast-content-title {
+    margin: 0;
+    margin-top: 10px;
+}
+.addicast-content-artist {
+    margin: 0;
+    margin-top: 2px;
+    font-size: 14px;
+    color: gray;
+}
+.addicast-content-label {
+    margin: 0;
+    margin-top: 2px;
+    font-size: 14px;
+    color: gray;
+}
 
 
 
