@@ -41,14 +41,14 @@
 
 
   .instagram{
-    color: purple;
+    color: red;
   }
 
   .soundcloud{
     background:linear-gradient(120deg, #ff8800, #ff3300);
     color: white;
     border-radius: 20px;
-    }
+  }
 
   .youtube{
     color: RED;

@@ -1,20 +1,36 @@
-.div-pagina-home{
-    
-}
 
 .div-pagina-home ul{
-    list-style-type: none;  
-    overflow: hidden;
-    margin-left: 0;
-    padding-left: 0;
-}
-
-.div-pagina-home ul li{
-    background-color: rgba(230, 230, 230, 0.731);
-    border-radius: 20px;
-    margin-bottom: 10px;
     display: flex;
-}
+    flex-wrap: wrap;
+    list-style: none outside none;
+    padding-right: 10px;
+  }
+
+  .div-pagina-home ul li{
+    margin: 5px;
+    background-color: #414141;
+    flex: 2; /* Distribuir espaço igualmente entre os itens */
+    text-align: start;
+  }
+
+.imagemMusicaInternaHome{
+
+    transition:transform 0.25s ease;
+    max-width: 100%;
+ }
+
+ .imagemMusicaInternaHome:hover{
+    -webkit-transform:scale(1.5); /* or some other value */
+    transform:scale(1.1);
+    cursor: pointer;
+  }
+
+
+ .nome-interno{
+    font-size: 19px;
+    color: rgba(255, 255, 255, 0.664);
+ }
+
 
 .div-itens-show{
     padding-left: 20px;
@@ -34,6 +50,10 @@
     padding-left: 0;
 }
 
+.imagem-home{
+    width: 1280;
+    height: 1080;
+}
 
 
 
