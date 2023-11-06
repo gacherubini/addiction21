@@ -6,7 +6,7 @@ function Sobre() {
   return (
     <div className="div-pagina-home">
             <h1>Nossa Equipe</h1>
-        <Artistas/>
+          <Artistas/>
     </div>
     
   );
