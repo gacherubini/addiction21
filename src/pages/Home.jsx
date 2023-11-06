@@ -2,8 +2,8 @@ import { useNavigate } from "react-router-dom";
 import React , { useEffect, useState } from "react";
 import "./Home.css"
 import Constants from "../Constants";
-import AddicastSoundCloudIFrame from "./AddicastSoundCloudIFrame";
 import Addicast from "../components/Addicast";
+import Track from "../components/Track";
 
 
 function Home() {
@@ -38,14 +38,25 @@ function Home() {
 
   return (
     <div className="div-pagina-home">
-      <h5 className="titulo-home">Ultimos Lançamentos</h5>
+
+      <p>A Addiction21 é uma label natural de Porto Alegre, BR (🇧🇷), que visa fortalecer a cena da música eletrônica na capital e região, com a promoção de eventos e artistas. Você escutará aqui sets e mixes dos nossos residentes e de diversos outros DJ's reconhecidos na indústria da música eletrônica. Acompanhe cada história musical atrelada à identidade de cada DJ apresentado.</p>
+
       <div className="row coluna-addicast">
-        {musicas.map((musica) => (
-            <Addicast imagem={musica.imagem} nome={musica.nome} artistas={musica.artistas} label="Addiction 21"/>
-        ))}
+      <h2>Tracks da Addiction 21 Records:</h2>
+      
+      {musicas.map((musica) => (
+            <Track imagem={musica.imagem} nome={musica.nome} artistas={musica.artistas} label="Addiction 21"/>
+      ))}
+
+     
+      <h2>Ultimos Addicasts:</h2>
+
+      {musicas.map((musica) => (
+          <Addicast imagem={musica.imagem} nome={musica.nome} artistas={musica.artistas}/>
+      ))}
       </div>
+
     </div>
-    
     )
   }
   
