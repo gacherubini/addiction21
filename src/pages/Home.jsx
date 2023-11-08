@@ -78,6 +78,7 @@ function Home() {
 
       {addicasts.map((addicast) => (
         <Addicast
+        id={addicast.id}
         imagem={addicast.artwork_url}
         nome={addicast.title}
         label="Addiction 21"

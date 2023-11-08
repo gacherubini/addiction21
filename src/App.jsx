@@ -10,7 +10,7 @@ import Equipe from './pages/Equipe'
 import Contato from './pages/Contato';
 
 import './styles/app.css'
-import MusicCard from './pages/MusicCard';
+import AddicastDetails from './pages/AddicastDetails';
 
 function App() {
   
@@ -24,8 +24,7 @@ function App() {
                   <Route path="/" element = {<Home/>} />
                   <Route path="/equipe" element = {<Equipe/>} />
                   <Route path="/contato" element = {<Contato/>} />
-                  <Route path="/musicCard" element = {<MusicCard/>} />
-
+                  <Route path="/addicastDetails/:id" element = {<AddicastDetails/>} />
       </Routes>
       </main>
       <footer> 
