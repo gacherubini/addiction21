@@ -2,6 +2,11 @@
     padding: 0;
 }
 
+.imagem-home{
+    width: 100%;
+    height: 100%;
+}
+
 .track-content {
     background-color: #343434;
     color: white;
