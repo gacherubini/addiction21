@@ -1,5 +1,7 @@
-import { FaInstagramSquare, FaSoundcloud, FaYoutube } from "react-icons/fa";
-import { AiFillInstagram } from "react-icons/ai";
+import { FaYoutube } from "react-icons/fa";
+import { SiBeatport } from "react-icons/si";
+import { BsSpotify } from "react-icons/bs";
+
 
 function Track(props) {
   return (
@@ -12,13 +14,13 @@ function Track(props) {
           
           <div className="track-social-media">
             <a href="#">
-                <AiFillInstagram className="spotify" size={40} />
+                <BsSpotify className="spotify" size={25} />
               </a>
               <a href="#">
-                <FaYoutube className="youtube" size={40} />
+                <FaYoutube className="youtube" size={25} />
               </a>
               <a href="#">
-                <FaSoundcloud className="beatport" size={40} />
+                <SiBeatport className="beatport" size={25} />
               </a>
           </div>
         </div>

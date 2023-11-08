@@ -13,9 +13,6 @@ function MenuHeader() {
             <Link  className = "equipe" to="/equipe">Equipe </Link>
           </li>
           <li>
-            <Link  className = "musica" to="/musica">Nossa música</Link>
-          </li>
-          <li>
             <Link  className = "contato" to="/contato">Nos envie uma mensagem</Link>
           </li>
         </ul> 

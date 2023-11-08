@@ -6,7 +6,6 @@ import { BrowserRouter, Routes, Route} from 'react-router-dom';
 import '../fonts/AeonikTRIAL-Regular.otf';
 
 import Home from './pages/Home'
-import Musica from './pages/Musica'
 import Equipe from './pages/Equipe'
 import Contato from './pages/Contato';
 
@@ -22,7 +21,6 @@ function App() {
       <main> 
       <Routes>
                   <Route path="/" element = {<Home/>} />
-                  <Route path="/musica" element = {<Musica/>} />
                   <Route path="/equipe" element = {<Equipe/>} />
                   <Route path="/contato" element = {<Contato/>} />
       </Routes>
