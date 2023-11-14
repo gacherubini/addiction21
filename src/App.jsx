@@ -8,9 +8,9 @@ import '../fonts/AeonikTRIAL-Regular.otf';
 import Home from './pages/Home'
 import Equipe from './pages/Equipe'
 import Contato from './pages/Contato';
+import AddicastDetails from './pages/AddicastDetails';
 
 import './styles/app.css'
-import AddicastDetails from './pages/AddicastDetails';
 
 function App() {
   

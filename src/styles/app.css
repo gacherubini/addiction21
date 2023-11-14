@@ -1,11 +1,11 @@
 @font-face {
   font-family: "Aeonik";
   src: local("AeonikTRIAL-Regular"),
-   url("./fonts/AeonikTRIAL-Regular.otf") format("truetype");
+   url("../fonts/AeonikTRIAL-Regular.otf") format("truetype");
  }
 
 body{
-  background-image: url("public/background.jpg");
+  background-image: url("../../public/background.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   display: flex;
@@ -210,5 +210,6 @@ p{
 .contato:hover{
   font-size:16px;
 }
+
 
 
