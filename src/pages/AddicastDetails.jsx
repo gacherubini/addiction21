@@ -1,8 +1,10 @@
 import React from 'react'
 import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
+import "./AddicastDetails.css"; // Importe seu arquivo CSS para aplicar estilos
+ 
 
-// import AddicastSoundCloudIFrame from '../pages/AddicastSoundCloudIFrame';
+import AddicastSoundCloudIFrame from '../pages/AddicastSoundCloudIFrame';
 
 const AddicastDetails = () => {
   const { id } = useParams();
@@ -17,7 +19,7 @@ const AddicastDetails = () => {
         setTracks(data)
         setLoading(false);
       })
-      .catch(error => {
+      .catch(error => { 
         setError(error);
         setLoading(false);
       });
@@ -33,10 +35,17 @@ const AddicastDetails = () => {
 
   return (
     <div className='div-music-card'>
-        <img src={tracks.artwork_url} />
+      <div className='div-informacoes-details'>
+        <img className='imagem-details' src={tracks.artwork_url} />
         <h2> {tracks.title} </h2>
+        <p>{tracks.user.username}</p>
+        <p>{tracks.user.city}</p>
+      </div>
         <p> {tracks.description} </p>
-        {/* <AddicastSoundCloudIFrame id={props.id}/> */}
+        <p>{tracks.created_at}</p>
+        <div className='div-frame'>
+        <AddicastSoundCloudIFrame id={tracks.id}/>
+        </div>
     </div>
   )
 }

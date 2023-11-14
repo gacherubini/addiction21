@@ -1,0 +1,11 @@
+.div-music-card{
+}
+
+.div-informacoes-details{
+    box-sizing: border-box;
+    display: flex;
+}
+
+.imagem-details{
+    width: 400px;
+}
