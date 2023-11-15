@@ -100,7 +100,49 @@
     transition:transform 0.25s ease;
 }
 
+.div-lista-addicast{
+    display: flex;
+  flex-wrap: nowrap;
+  overflow-x: scroll;
+}
 
+.div-lista-addicast::-webkit-scrollbar {
+    height: 8px;
+  }
+  
+  .div-lista-addicast::-webkit-scrollbar-thumb {
+    background-color: gray;
+    border-radius: 10px;
+  }
+  
+  .div-lista-addicast::-webkit-scrollbar-track {
+    background-color: white;
+    border-radius: 10px;
+  }
+
+  .action-btns {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-bottom: 7px;
+    color: #343434;
+  }
+
+  .action-btns button {
+    width: 40px;
+    height: 22px;  
+    color: #343434;
+    background-color: rgb(27, 26, 26);
+    color: white;
+    cursor: pointer;
+  }
+  
+  .action-btns button:hover {
+    color: #ffffff;
+    background-color: rgb(191, 191, 191);
+  }
+
+ 
 
 
 
