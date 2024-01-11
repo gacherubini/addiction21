@@ -66,21 +66,9 @@
     padding-right: 7px;
 }
 
-.spotify, .beatport, .youtube {
-    margin-right: 5px;
-    margin-left: 6px;
-    margin-top: 8px;
-}
-
 .spotify{
     color: rgb(34, 241, 34);
 }
-
-.beatport{
-    color: rgb(2, 143, 2);
-    stroke: rgb(2, 143, 2);
-}
-
 
 .youtube:hover{
     transform:scale(1.5);
@@ -88,7 +76,19 @@
     transition:transform 0.25s ease;
 }
 
+.instagram:hover{
+    transform:scale(1.5);
+    cursor: pointer;
+    transition:transform 0.25s ease;
+}
+
 .spotify:hover{
+    transform:scale(1.5);
+    cursor: pointer;
+    transition:transform 0.25s ease;
+}
+
+.soundcloud:hover{
     transform:scale(1.5);
     cursor: pointer;
     transition:transform 0.25s ease;
@@ -101,7 +101,7 @@
 }
 
 .div-lista-addicast{
-    display: flex;
+  display: flex;
   flex-wrap: nowrap;
   overflow-x: scroll;
 }

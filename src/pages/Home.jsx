@@ -43,11 +43,8 @@ function Home() {
   }, []);
 
 
-
-  
 const containerRef = useRef();
 
-  // Function to handle scrolling when the button is clicked
 const handleScroll = (scrollAmount) => {
   const newScrollPosition = scrollPosition + scrollAmount;
   setScrollPosition(newScrollPosition);
@@ -83,7 +80,6 @@ const handleScroll = (scrollAmount) => {
           />
         ))}
         </div>
-    
       </div>
     </div>
     )
@@ -93,12 +89,3 @@ const handleScroll = (scrollAmount) => {
   export default Home
 
 
-      {/* <h2>Tracks da Addiction 21 Records:</h2>
-      {musicas.map((musica) => (
-            <Track 
-            imagem={musica.imagem} 
-            nome={musica.nome} 
-            artistas={musica.artistas} 
-            label="Addiction 21"/>
-      ))} */}
- 

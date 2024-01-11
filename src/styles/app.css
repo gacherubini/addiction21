@@ -7,6 +7,7 @@
 body{
   background-image: url("../../public/background.jpg");
   background-repeat: no-repeat;
+  background-size: cover;
   background-attachment: fixed;
   display: flex;
   flex-direction: column;
@@ -72,16 +73,22 @@ nav ul {
 nav ul li {
   margin-right: 20px;
   color: black;
+  font-size: 18px;
+}
+
+nav ul li:hover{
+  font-size: 20px;
+  transition: 0.8s;
 }
 
 nav ul li a {
-  color: black;
+  color: rgb(234, 234, 234);
   text-decoration: none;
   font-weight: bold;
 }
 
 nav ul li a:hover {
-  color: white;
+  color: black;
 }
 
 .addictionHomeImage{
@@ -124,19 +131,20 @@ h1{
 }
 
 p{
-  font-weight: 600  ;
+  font-weight: 600;
   font-size: 18px;
 }
 
 .SoundCloud{
   margin:auto;
-  width: 100%;
+  width: 50%;
 }
 
 .ContactForm{
   padding-bottom: 50px;
   text-align: center;
 }
+
 .div-form {
   margin: 0 auto;
   width: 70%;
@@ -194,22 +202,6 @@ p{
   transform:scale(1.1);
 }
 
-.artistas, .musica, .contato{
-  transition: all 300ms;
-  font-size:14px;
-}
-
-.artistas:hover{
-  font-size:18px;
-}
-
-.musica:hover{
-  font-size:17px;
-}
-
-.contato:hover{
-  font-size:16px;
-}
 
 
 

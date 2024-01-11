@@ -39,9 +39,17 @@
     justify-content: space-around;
   }
 
+  .socialMedia-section-footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
 
   .instagram{
-    color: red;
+    color: rgb(96, 3, 39);
+    border-radius: 20px;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%,#fd5949 45%,#d6249f 60%,#285AEB 90%);
   }
 
   .soundcloud{

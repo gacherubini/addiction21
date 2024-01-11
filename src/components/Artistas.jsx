@@ -1,4 +1,4 @@
-import { FaInstagramSquare, FaSoundcloud, FaYoutube } from "react-icons/fa";
+import { FaSoundcloud, FaYoutube } from "react-icons/fa";
 import { AiFillInstagram } from "react-icons/ai";
 import React, { useEffect, useState } from "react";
 
