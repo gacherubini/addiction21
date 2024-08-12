@@ -1,4 +1,10 @@
-/* Estilos gerais */
+@font-face {
+  font-family: 'Aeonik';
+  src: url('fonts/Nulshock BD (1).otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 body, html {
   margin: 0;
   padding: 0;
@@ -16,13 +22,12 @@ body, html {
 h2 {
   margin:0;
   padding:0;
-  font-size: 22px;
+  font-family: 'Aeonik';
   text-align: start;
   color: white;
   margin-bottom: 4px;
   margin-left: 5px;
   margin-bottom: 10px;
-  font-family: "Aeonik";
 }
 
 /* Seções específicas */
@@ -137,7 +142,7 @@ nav ul li a:hover {
 
 h1{
   font-size: 60px;
-  font-family: 'Times';
+  font-family: 'Aeonik';
   text-align: center;
   text-transform: uppercase;
   color: white;
