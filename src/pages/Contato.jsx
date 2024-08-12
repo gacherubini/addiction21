@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import { useRef } from "react";
 import 'semantic-ui-css/semantic.min.css';
 import emailjs from '@emailjs/browser';
 
@@ -27,6 +27,7 @@ function Contato() {
             <label htmlFor="user_name">Nome Artístico</label>
             <input
               type="text"
+              placeholder='Digite seu nome'
               name="user_name"
               id="user_name"
               className='input'
@@ -36,6 +37,7 @@ function Contato() {
             <label htmlFor="user_email">E-mail</label>
             <input
               type="email"
+              placeholder='Digite seu email'
               name="user_email"
               id="user_email"
               className='input'
@@ -45,6 +47,7 @@ function Contato() {
             <label htmlFor="message">Mensagem</label>
             <textarea
               name="message"
+              placeholder='Digite sua menssagem'
               id="message"
               className='input-message'
             />

@@ -1,23 +1,19 @@
-import { Link } from "react-router-dom"
-
-
 function MenuHeader() {
-    return( 
-      <nav >
-        <div className="addictionHomeImage">
-            <Link to="/"><img className="HomeImagem" width={200} src="../../public/addLogo.png"/></Link>
-        </div>
-        <ul>
-          <li>
-            <Link  className = "equipe" to="/equipe">Equipe </Link>
-          </li>
-          <li>
-            <Link  className = "contato" to="/contato">Nos envie uma mensagem</Link>
-          </li>
-        </ul> 
-      </nav>
-    )
-  }
-  
-  export default MenuHeader
-  
+    return (
+        <nav>
+            <div className="addictionHomeImage">
+                <a href="#home"><img className="HomeImagem" width={200} src="../../public/addLogo.png" alt="Home" /></a>
+            </div>
+            <ul>
+                <li>
+                    <a className="equipe" href="#equipe">Equipe</a>
+                </li>
+                <li>
+                    <a className="contato" href="#contato">Nos envie uma mensagem</a>
+                </li>
+            </ul>
+        </nav>
+    );
+}
+
+export default MenuHeader;

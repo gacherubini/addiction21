@@ -1,20 +1,16 @@
-import {Link} from 'react-router-dom';
 
 function Addicast(props) {
-  return (
-      <div class="col-xs-6 col-sm-3 col-lg-2 track">
-        <Link to = {`/addicastDetails/${props.id}`}>
-        <div class="track-content track-content-addicast">
-          <img className="track-content-image" src={props.imagem}/>
-          <p className="track-content-title"> {props.nome} </p>
-          <p className="track-content-artist"> {props.label} </p>
+    const { imagem, nome, label } = props;
+
+    return (
+        <div className="col-xs-6 col-sm-3 col-lg-2 track">
+                <div className="track-content track-content-addicast">
+                    <img className="track-content-image" src={imagem} alt={nome || 'Addicast Image'} />
+                    <p className="track-content-title">{nome || 'Untitled'}</p>
+                    <p className="track-content-artist">{label || 'Unknown Label'}</p>
+                </div>
         </div>
-        </Link>
-      </div>
-    )
-  }
-  
-  
-  export default Addicast
+    );
+}
 
-
+export default Addicast;

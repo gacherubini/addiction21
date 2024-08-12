@@ -5,8 +5,8 @@ import { BsSpotify } from "react-icons/bs";
 
 function Track(props) {
   return (
-      <div class="col-xs-6 col-sm-3 col-lg-2 track">
-        <div class="track-content track-content-faixa">
+      <div className="col-xs-6 col-sm-3 col-lg-2 track">
+        <div className="track-content track-content-faixa">
           <img className="track-content-image" src={props.imagem}/>
           <p className="track-content-title"> {props.nome} </p>
           <p className="track-content-artist"> {props.artistas} </p>
