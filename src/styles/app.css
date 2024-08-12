@@ -32,25 +32,24 @@ h2 {
   margin-left: 12%;
   padding-left: 2%;
   padding-right: 2%;
-  margin-bottom: 2%;
+  margin-bottom: 10%;
   padding-top: 1%;
   padding-bottom: 1%;
-  background-color: #262626;
   text-align: center;
 }
 
 .home-section {
-  background-color: #262626;
+  background-color: rgba(38, 38, 38, 0.5); /* Fundo preto com 80% de opacidade */
   color: white;
 }
 
 .equipe-section {
-  background-color: transparent;
+  background-color: rgba(38, 38, 38, 0.5); /* Fundo preto com 80% de opacidade */
   color: black;
 }
 
 .contato-section {
-  background-color:transparent;
+  background-color: rgba(38, 38, 38, 0.5); /* Fundo preto com 80% de opacidade */
   color: black;
 }
 
@@ -145,6 +144,7 @@ h1{
 }
 
 p{
+  color: white;
   font-weight: 600;
   font-size: 18px;
 }

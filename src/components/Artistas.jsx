@@ -1,6 +1,5 @@
 import { FaSoundcloud, FaYoutube } from "react-icons/fa";
 import { AiFillInstagram } from "react-icons/ai";
-import React, { useEffect, useState } from "react";
 
 const gui = "public/guilherme.jpg";
 const daluz = "public/daluz.jpg";
@@ -20,7 +19,7 @@ const Artistas = () => {
       {artistas.map((artista, index) => (
         <div className="author" key={index}>
           <h2>{artista.nome}</h2>
-          <img width={300} height={300} src={artista.img} alt={artista.nome} />
+          <img width={230} height={230} src={artista.img} alt={artista.nome} />
           <p>{artista.descricao}</p>
           <h2>Siga {artista.nome} nas redes sociais</h2>
           <div className="socialMedia-section">

@@ -14,7 +14,7 @@ function App() {
             <header>
                 <MenuHeader />
             </header>
-            <main>
+
                 <section id="home" className="section home-section">
                     <Home />
                 </section>
@@ -26,7 +26,6 @@ function App() {
                 <section id="contato" className="section contato-section">
                     <Contato />
                 </section>
-            </main>
             <footer>
                 <MenuFooter />
             </footer>

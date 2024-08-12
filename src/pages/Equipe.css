@@ -13,7 +13,7 @@
     border-radius: 2rem;
     padding: 20px;
     margin: 10px;
-    background-color: #343434;
+    background-color: rgba(38, 38, 38, 0.6); /* Fundo preto com 80% de opacidade */
   }
   /* Style for author names */
   .author h2 {
