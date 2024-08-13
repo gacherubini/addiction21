@@ -7,11 +7,48 @@ const lorenzet = "public/lorenzet.jpg";
 const doug = "public/doug.jpg";
 
 const artistas = [
-  { nome: "cherubini", img: gui, descricao: "Cherubini, é um visionário da música eletrônica. Com sua habilidade excepcional para criar paisagens sonoras complexas e emotivas, ele é o responsável por boa parte do som distinto do Eletrônica Addiction21. Sua jornada na música eletrônica começou cedo, e desde então ele tem explorado os limites do som, fundindo elementos de diferentes gêneros musicais para criar algo verdadeiramente único. Seus anos de experiência e paixão pela música são evidentes em cada batida e melodia que ele produz.", insta: "https://www.instagram.com/cherubinimusic/", soundcloud: "https://www.instagram.com/cherubinimusic/", youtube: "https://www.instagram.com/cherubinimusic/" , beatport: "https://www.instagram.com/cherubinimusic/", spotify:"https://www.instagram.com/cherubinimusic/"},
-  { nome: "Da luz", img: daluz, descricao: "Da luz, é um visionário da música eletrônica.  Com sua habilidade excepcional para criar paisagens sonoras complexas e emotivas, ele é o responsável por boa parte do som distinto do Eletrônica Addiction21. Sua jornada na música eletrônica começou cedo, e desde então ele tem explorado os limites do som, fundindo elementos de diferentes gêneros musicais para criar algo verdadeiramente único. Seus anos de experiência e paixão pela música são evidentes em cada batida e melodia que ele produz.", insta: "https://www.instagram.com/cherubinimusic/", soundcloud: "https://www.instagram.com/cherubinimusic/", youtube: "https://www.instagram.com/cherubinimusic/" , beatport: "https://www.instagram.com/cherubinimusic/", spotify:"https://www.instagram.com/cherubinimusic/"},
-  { nome: "Lorenzet", img: lorenzet, descricao: "Lorenzet, é um visionário da música eletrônica.  Com sua habilidade excepcional para criar paisagens sonoras complexas e emotivas, ele é o responsável por boa parte do som distinto do Eletrônica Addiction21. Sua jornada na música eletrônica começou cedo, e desde então ele tem explorado os limites do som, fundindo elementos de diferentes gêneros musicais para criar algo verdadeiramente único. Seus anos de experiência e paixão pela música são evidentes em cada batida e melodia que ele produz.", insta: "https://www.instagram.com/cherubinimusic/", soundcloud: "https://www.instagram.com/cherubinimusic/", youtube: "https://www.instagram.com/cherubinimusic/" , beatport: "https://www.instagram.com/cherubinimusic/", spotify:"https://www.instagram.com/cherubinimusic/"},
-  { nome: "Doug", img: doug, descricao: "Doug, é um visionário da música eletrônica.  Com sua habilidade excepcional para criar paisagens sonoras complexas e emotivas, ele é o responsável por boa parte do som distinto do Eletrônica Addiction21. Sua jornada na música eletrônica começou cedo, e desde então ele tem explorado os limites do som, fundindo elementos de diferentes gêneros musicais para criar algo verdadeiramente único. Seus anos de experiência e paixão pela música são evidentes em cada batida e melodia que ele produz.", insta: "https://www.instagram.com/cherubinimusic/", soundcloud: "https://www.instagram.com/cherubinimusic/", youtube: "https://www.instagram.com/cherubinimusic/" , beatport: "https://www.instagram.com/cherubinimusic/", spotify:"https://www.instagram.com/cherubinimusic/"},
+  {
+    nome: "Cherubini",
+    img: gui,
+    descricao: "Cherubini é o arquiteto sonoro da Eletrônica Addiction21, combinando gêneros para criar sons únicos e emotivos.",
+    insta: "https://www.instagram.com/cherubinimusic/",
+    soundcloud: "https://www.instagram.com/cherubinimusic/",
+    youtube: "https://www.instagram.com/cherubinimusic/",
+    beatport: "https://www.instagram.com/cherubinimusic/",
+    spotify:"https://www.instagram.com/cherubinimusic/"
+  },
+  {
+    nome: "Da Luz",
+    img: daluz,
+    descricao: "Da Luz é mestre em criar paisagens sonoras que definem o som único da Eletrônica Addiction21.",
+    insta: "https://www.instagram.com/cherubinimusic/",
+    soundcloud: "https://www.instagram.com/cherubinimusic/",
+    youtube: "https://www.instagram.com/cherubinimusic/",
+    beatport: "https://www.instagram.com/cherubinimusic/",
+    spotify:"https://www.instagram.com/cherubinimusic/"
+  },
+  {
+    nome: "Lorenzet",
+    img: lorenzet,
+    descricao: "Lorenzet funde diversos estilos para criar composições eletrônicas inovadoras e marcantes.",
+    insta: "https://www.instagram.com/cherubinimusic/",
+    soundcloud: "https://www.instagram.com/cherubinimusic/",
+    youtube: "https://www.instagram.com/cherubinimusic/",
+    beatport: "https://www.instagram.com/cherubinimusic/",
+    spotify:"https://www.instagram.com/cherubinimusic/"
+  },
+  {
+    nome: "Doug",
+    img: doug,
+    descricao: "Doug traz uma abordagem única à Eletrônica Addiction21, explorando novas fronteiras sonoras.",
+    insta: "https://www.instagram.com/cherubinimusic/",
+    soundcloud: "https://www.instagram.com/cherubinimusic/",
+    youtube: "https://www.instagram.com/cherubinimusic/",
+    beatport: "https://www.instagram.com/cherubinimusic/",
+    spotify:"https://www.instagram.com/cherubinimusic/"
+  },
 ];
+
 
 const Artistas = () => {
   return (

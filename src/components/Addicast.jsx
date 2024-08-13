@@ -1,4 +1,3 @@
-
 function Addicast(props) {
     const { imagem, nome, label } = props;
 

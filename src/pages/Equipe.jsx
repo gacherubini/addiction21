@@ -4,7 +4,7 @@ import Artistas from "../components/Artistas";
 
 function Sobre() {
   return (
-    <div className="div-pagina-home">
+    <div className="div-pagina-sobre">
             <h1>Nossa Equipe</h1>
           <Artistas/>
     </div>

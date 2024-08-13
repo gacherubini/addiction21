@@ -5,7 +5,7 @@
     justify-content: space-around;
     margin-top: 20px;
   }
-  
+
   /* Style for individual author boxes */
   .author {
     width: 100%;
@@ -17,8 +17,12 @@
   }
   /* Style for author names */
   .author h2 {
-    font-size: 20px;
-    margin-bottom: 10px;
+    font-size: 10px;
+  }
+
+  .div-pagina-sobre h1{
+    font-size: 30px;
+    text-align: left;
   }
   
   /* Style for author images */
@@ -30,7 +34,7 @@
   
   /* Style for author descriptions */
   .author p {
-    font-size: 14px;
+    font-size: 10px;
     line-height: 1.4;
   }
 

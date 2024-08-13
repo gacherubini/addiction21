@@ -1,5 +1,7 @@
 import { useRef } from "react";
 import 'semantic-ui-css/semantic.min.css';
+import "./Contato.css";
+
 import emailjs from '@emailjs/browser';
 
 function Contato() {

@@ -1,10 +1,12 @@
 .track {
     padding: 0;
+    margin: 0;
+    flex: 1;
 }
 
-.imagem-home{
+.imagem-home {
     width: 100%;
-    height: 100%;
+    height: auto;
     margin: 0;
     padding: 0;
 }
@@ -12,123 +14,96 @@
 .track-content {
     background-color: rgba(38, 38, 38, 0.5);
     color: white;
-    margin: 0;
+    margin: 6px;
     padding: 0;
     display: flex;
     flex-direction: column;
-    margin: 6px;
+    flex: 1;
+    box-sizing: border-box;
+    height: 100%;
 }
 
-.track-content-faixa {
-    height: 400px;
-}
-
+.track-content-faixa,
 .track-content-addicast {
     height: 300px;
+    flex-grow: 1;
 }
 
 .track-content-addicast:hover {
-    transform:scale(1.05);
+    transform: scale(1.05);
     cursor: pointer;
-    transition:transform 0.25s ease;
+    transition: transform 0.25s ease;
     background-color: #494949;
 }
 
 .track-content-image {
     width: 100%;
     height: 70%;
-    object-fit: cover; /* To ensure the image covers the entire container */
+    object-fit: cover;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+
 .track-content-title {
     margin: 0;
     margin-top: 7px;
-    text-overflow: ellipsis; 
-    overflow: hidden; 
+    padding-left: 7px;
+    padding-right: 7px;
+    text-overflow: ellipsis;
+    overflow: hidden;
     white-space: nowrap;
-    padding-left: 7px;
-    padding-right: 7px;
+    box-sizing: border-box;
+    flex-shrink: 0; /* Impede que o título se expanda ou encolha */
+    max-height: 1.5em; /* Limita a altura do título a uma linha */
 }
-.track-content-artist {
-    margin: 0;
-    margin-top: 2px;
-    font-size: 14px;
-    color: gray;
-    padding-left: 7px;
-    padding-right: 7px;
 
-}
+.track-content-artist,
 .track-content-label {
     margin: 0;
-    margin-top: 0px;
     font-size: 14px;
     color: gray;
     padding-left: 7px;
     padding-right: 7px;
+    box-sizing: border-box;
+    flex-shrink: 0; /* Impede que o texto se expanda ou encolha */
+    max-height: 1.2em; /* Limita a altura dos textos de artista e label */
 }
 
-.youtube:hover{
-    transform:scale(1.5);
-    cursor: pointer;
-    transition:transform 0.25s ease;
-}
-
-.instagram:hover{
-    transform:scale(1.5);
-    cursor: pointer;
-    transition:transform 0.25s ease;
-}
-
-.soundcloud:hover{
-    transform:scale(1.5);
-    cursor: pointer;
-    transition:transform 0.25s ease;
-}
-
-.div-lista-addicast{
-  display: flex;
-  flex-wrap: nowrap;
-  overflow-x: scroll;
+.div-lista-addicast {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
 }
 
 .div-lista-addicast::-webkit-scrollbar {
     height: 8px;
-  }
-  
-  .div-lista-addicast::-webkit-scrollbar-thumb {
+}
+
+.div-lista-addicast::-webkit-scrollbar-thumb {
     background-color: gray;
     border-radius: 10px;
-  }
+}
 
-  .action-btns {
+.action-btns {
     display: flex;
     justify-content: right;
     gap: 10px;
     margin-bottom: 7px;
     color: #343434;
-  }
+}
 
-
-
-  .action-btns button {
+.action-btns button {
     width: 40px;
-    height: 22px;  
+    height: 22px;
     color: #343434;
     background-color: rgb(27, 26, 26);
     color: white;
     cursor: pointer;
     position: relative;
-  }
+}
 
-  .action-btns button:hover {
+.action-btns button:hover {
     color: #ffffff;
     background-color: rgb(191, 191, 191);
-  }
-
-
- 
-
-
-
-
-
-
+}

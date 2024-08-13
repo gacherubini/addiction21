@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 @font-face {
   font-family: 'Aeonik';
   src: url('fonts/Nulshock BD (1).otf') format('opentype');
@@ -11,12 +15,29 @@ body, html {
   font-family: Aeonik, Arial, Helvetica, sans-serif;
   color: gray;
   scroll-behavior: smooth;
-  background-image: url("../../public/background.jpg");
+  /*background-image: url("../../public/background.jpg");*/
+  background-color: rgba(0, 0, 0, 0.9);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
+}
+
+.galeria-section {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  width: 100vw;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.galeria-section img {
+  width: 100vw;
+  height: auto;
+  display: block;
+  margin: 0;
 }
 
 h2 {
@@ -30,35 +51,39 @@ h2 {
   margin-bottom: 10px;
 }
 
-/* Seções específicas */
 .section {
-  padding: 60px 20px;
-  margin-right: 12%;
-  margin-left: 12%;
+  border-radius: 2rem;
+  padding: 0px 20px;
+  margin: 0 auto;
+  width: calc(100% - 40px);
   padding-left: 2%;
   padding-right: 2%;
   margin-bottom: 10%;
-  padding-top: 1%;
-  padding-bottom: 1%;
   text-align: center;
 }
 
 .home-section {
-  background-color: rgba(38, 38, 38, 0.5); /* Fundo preto com 80% de opacidade */
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 20px 20px;
   color: white;
 }
 
 .equipe-section {
-  background-color: rgba(38, 38, 38, 0.5); /* Fundo preto com 80% de opacidade */
-  color: black;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 20px 20px;
+  color: white;
 }
 
 .contato-section {
-  background-color: rgba(38, 38, 38, 0.5); /* Fundo preto com 80% de opacidade */
-  color: black;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
 }
 
 header {
+  background-color: rgba(0, 0, 0, 0.9);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+  margin: 0;
+  padding: 0;
   height: 100px;
 }
 
@@ -75,7 +100,6 @@ footer {
 }
 
 nav {
-  margin-top: 20px;
   margin-bottom: 20px;
   display: flex;
   text-decoration: none;
@@ -85,6 +109,7 @@ nav ul {
   list-style-type: none;
   overflow: hidden;
   display: flex;
+  margin-top: 35px;
   margin-left: auto;
 }
 
@@ -111,6 +136,7 @@ nav ul li a:hover {
 
 .addictionHomeImage{
   padding-left: 20px;
+  margin-top: 20px;
 }
 
 .imageLoading{
@@ -150,65 +176,13 @@ h1{
 
 p{
   color: white;
-  font-weight: 600;
+  font-weight: 400;
   font-size: 18px;
 }
 
 .SoundCloud{
   margin:auto;
   width: 50%;
-}
-
-.ContactForm{
-  padding-bottom: 50px;
-  text-align: center;
-}
-
-.div-form {
-  margin: 0 auto;
-  width: 70%;
-  max-width: 400px;
-}
-
-.form-group label {
-  display: block;
-  margin-bottom: 5px;
-}
-
-.form-group input,
-.form-group textarea {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 15px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  font-size: 16px;
-}
-
-.input{
-  width: 400px;
-  height: 30px;
-  border: none;
-}
-
-.input-message{
-  width: 400px;
-  height: 80px;
-  border: none;
-}
-
-.input-button{
-  width: 400px;
-  height: 30px;
-  background-color: green;
-  color: white;
-  border: none;
-}
-
-.input-button:hover{
-  background-color: #4CAF50; /* Green */
-  color: white;
-  cursor: pointer;
 }
 
 .HomeImagem{
