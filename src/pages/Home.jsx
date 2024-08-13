@@ -4,59 +4,68 @@ import Constants from "../Constants";
 import Addicast from "../components/Addicast";
 
 function Home() {
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(null);
-  const [addicasts, setAddicast] = useState([]);
+    const [loading, setLoading] = useState(true);
+    const [error, setError] = useState(null);
+    const [addicasts, setAddicast] = useState([]);
+    const [currentPage, setCurrentPage] = useState(1);
+    const itemsPerPage = 3;
 
+    useEffect(() => {
+        fetch('http://localhost:3000/addicast')
+            .then((response) => response.json())
+            .then((data) => {
+                setAddicast(data);
+                setLoading(false);
+            })
+            .catch((error) => {
+                setError(error);
+                setLoading(false);
+            });
+    }, []);
 
-  useEffect(() => {
-    fetch('http://localhost:3000/addicast')
-      .then((response) => response.json())
-      .then((data) => {
-        setAddicast(data); 
-        setLoading(false);
-      })
-      .catch((error) => {
-        setError(error);
-        setLoading(false);
-      });
-  }, []);
+    // Calcula os índices dos itens a serem exibidos
+    const indexOfLastItem = currentPage * itemsPerPage;
+    const indexOfFirstItem = indexOfLastItem - itemsPerPage;
+    const currentItems = addicasts.slice(indexOfFirstItem, indexOfLastItem);
 
+    const paginate = (pageNumber) => {
+        setCurrentPage(pageNumber);
+    };
 
-  if (loading) return <img className="imageLoading" src={"public/loading.gif"}/>;
-  if (error) return <p className="errorMensagem">{Constants.GENERIC_ERROR_MESSAGE}</p>;
+    if (loading) return <img className="imageLoading" src={"public/loading.gif"}/>;
+    if (error) return <p className="errorMensagem">{Constants.GENERIC_ERROR_MESSAGE}</p>;
 
-  return (
-      <div className="div-pagina-home">
-          {/*<p>A Addiction21 é uma label natural de Porto Alegre, BR (🇧🇷), que visa fortalecer a cena da música eletrônica*/}
-          {/*    na capital e região, com a promoção de eventos e artistas. Você escutará aqui sets e mixes dos nossos*/}
-          {/*    residentes e de diversos outros DJ's reconhecidos na indústria da música eletrônica. Acompanhe cada*/}
-          {/*    história musical atrelada à identidade de cada DJ apresentado.</p>*/}
-          <div className="row coluna-addicast">
-              <h2>Ultimos Addicasts:</h2>
-              <div className="div-lista-addicast"
-                   style={{
-                       width: "100%",
-                       overflowX: "scroll",
-                       scrollBehavior: "smooth",
-                   }}>
-                  {addicasts.map((addicast) => (
-                      <Addicast
-                          key={addicast.id}
-                          id={addicast.id}
-                          imagem={addicast.artwork_url}
-                          nome={addicast.title}
-                          label="Addiction 21"
-                          link={addicast.permalink_url}
-                      />
-                  ))}
-              </div>
-          </div>
-      </div>
-  )
+    return (
+        <div className="div-pagina-home">
+            <div className="row coluna-addicast">
+                <h2>Ultimos Addicasts:</h2>
+                <div className="div-lista-addicast"
+                     style={{
+                         width: "100%",
+                         overflowX: "scroll",
+                         scrollBehavior: "smooth",
+                     }}>
+                    {currentItems.map((addicast) => (
+                        <Addicast
+                            key={addicast.id}
+                            id={addicast.id}
+                            imagem={addicast.artwork_url}
+                            nome={addicast.title}
+                            label="Addiction 21"
+                            link={addicast.permalink_url}
+                        />
+                    ))}
+                </div>
+                <div className="pagination">
+                    {[...Array(Math.ceil(addicasts.length / itemsPerPage)).keys()].map(number => (
+                        <button key={number + 1} onClick={() => paginate(number + 1)}>
+                            {number + 1}
+                        </button>
+                    ))}
+                </div>
+            </div>
+        </div>
+    )
 }
 
-
-export default Home
-
-
+export default Home;

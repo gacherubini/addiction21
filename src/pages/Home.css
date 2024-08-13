@@ -1,9 +1,3 @@
-.track {
-    padding: 0;
-    margin: 0;
-    flex: 1;
-}
-
 .imagem-home {
     width: 100%;
     height: auto;
@@ -11,34 +5,43 @@
     padding: 0;
 }
 
-.track-content {
-    background-color: rgba(38, 38, 38, 0.5);
-    color: white;
-    margin: 6px;
-    padding: 0;
+.div-lista-addicast {
     display: flex;
-    flex-direction: column;
-    flex: 1;
-    box-sizing: border-box;
-    height: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-.track-content-faixa,
+.track {
+    padding: 0;
+    margin: 10px;
+    flex: 0 0 30%;
+    box-sizing: border-box;
+}
+
+.track-content {
+    background-color: rgba(38, 38, 38, 0.7);
+    color: white;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    height: 100%;
+    transition: transform 0.25s ease, background-color 0.25s ease;
+}
+
 .track-content-addicast {
-    height: 300px;
-    flex-grow: 1;
+    height: auto;
 }
 
 .track-content-addicast:hover {
-    transform: scale(1.05);
+    transform: scale(1.02);
     cursor: pointer;
-    transition: transform 0.25s ease;
-    background-color: #494949;
+    background-color: #333333;
 }
 
 .track-content-image {
     width: 100%;
-    height: 70%;
+    height: auto;
     object-fit: cover;
     margin: 0;
     padding: 0;
@@ -46,43 +49,19 @@
 }
 
 .track-content-title {
-    margin: 0;
-    margin-top: 7px;
-    padding-left: 7px;
-    padding-right: 7px;
+    margin: 10px 7px 0;
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;
     box-sizing: border-box;
-    flex-shrink: 0; /* Impede que o título se expanda ou encolha */
-    max-height: 1.5em; /* Limita a altura do título a uma linha */
+    font-size: 24px;
 }
 
-.track-content-artist,
-.track-content-label {
-    margin: 0;
-    font-size: 14px;
+.track-content-artist {
+    margin: 5px 7px 10px;
+    font-size: 18px;
     color: gray;
-    padding-left: 7px;
-    padding-right: 7px;
     box-sizing: border-box;
-    flex-shrink: 0; /* Impede que o texto se expanda ou encolha */
-    max-height: 1.2em; /* Limita a altura dos textos de artista e label */
-}
-
-.div-lista-addicast {
-    display: flex;
-    flex-wrap: nowrap;
-    overflow-x: scroll;
-}
-
-.div-lista-addicast::-webkit-scrollbar {
-    height: 8px;
-}
-
-.div-lista-addicast::-webkit-scrollbar-thumb {
-    background-color: gray;
-    border-radius: 10px;
 }
 
 .action-btns {
@@ -106,4 +85,24 @@
 .action-btns button:hover {
     color: #ffffff;
     background-color: rgb(191, 191, 191);
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.pagination button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    margin: 0 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.pagination button:hover {
+    background-color: #555;
 }
