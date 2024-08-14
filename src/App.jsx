@@ -4,6 +4,9 @@ import MenuFooter from './MenuFooter';
 import Home from './pages/Home';
 import Equipe from './pages/Equipe';
 import Contato from './pages/Contato';
+import Sobre from './pages/Sobre';
+import News from './pages/News';
+
 
 import './styles/app.css';
 
@@ -11,7 +14,7 @@ function App() {
     return (
         <div>
             <header>
-                <MenuHeader />
+                <MenuHeader/>
             </header>
             <section id="galeria" className="section galeria-section">
                 <img src="public/newImage.png" alt="Descrição da imagem"/>
@@ -21,15 +24,23 @@ function App() {
                 <Home/>
             </section>
 
+            <section id="news" className="section news-section">
+                <News/>
+            </section>
+
+            <section className="sobre-section">
+                <Sobre/>
+            </section>
+
             <section id="equipe" className="section equipe-section">
                 <Equipe/>
             </section>
 
-                <section id="contato" className="section contato-section">
-                    <Contato />
-                </section>
+            <section id="contato" className="section contato-section">
+                <Contato/>
+            </section>
             <footer>
-                <MenuFooter />
+                <MenuFooter/>
             </footer>
         </div>
     );

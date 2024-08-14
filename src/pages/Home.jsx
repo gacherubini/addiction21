@@ -23,7 +23,6 @@ function Home() {
             });
     }, []);
 
-    // Calcula os índices dos itens a serem exibidos
     const indexOfLastItem = currentPage * itemsPerPage;
     const indexOfFirstItem = indexOfLastItem - itemsPerPage;
     const currentItems = addicasts.slice(indexOfFirstItem, indexOfLastItem);
@@ -38,7 +37,7 @@ function Home() {
     return (
         <div className="div-pagina-home">
             <div className="row coluna-addicast">
-                <h2>Ultimos Addicasts:</h2>
+                <h2>Ultimas Músicas:</h2>
                 <div className="div-lista-addicast"
                      style={{
                          width: "100%",
@@ -54,7 +53,7 @@ function Home() {
                             label="Addiction 21"
                             link={addicast.permalink_url}
                         />
-                    ))}
+                    ))}x
                 </div>
                 <div className="pagination">
                     {[...Array(Math.ceil(addicasts.length / itemsPerPage)).keys()].map(number => (

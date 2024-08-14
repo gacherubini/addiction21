@@ -1,0 +1,51 @@
+/* Estrutura geral da página */
+.sobre-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    color: #333;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Cabeçalho da página */
+.sobre-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.sobre-header h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    color: #007bff;
+}
+
+.sobre-header p {
+    font-size: 1.2rem;
+    color: #666;
+}
+
+/* Seções de conteúdo */
+.sobre-section {
+    margin-bottom: 40px;
+}
+
+.sobre-section h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #007bff;
+}
+
+.sobre-section p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #555;
+}
+
+/* Rodapé da página */
+.sobre-footer {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #ccc;
+    color: #999;
+}
