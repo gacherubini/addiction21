@@ -11,7 +11,7 @@ function Home() {
     const itemsPerPage = 3;
 
     useEffect(() => {
-        fetch('http://localhost:3000/addicast')
+        fetch('https://addiction21-api.onrender.com/addicast')
             .then((response) => response.json())
             .then((data) => {
                 setAddicast(data);

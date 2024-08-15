@@ -11,7 +11,7 @@ const AddicastDetails = () => {
     const [track, setTrack] = useState(null);
 
     useEffect(() => {
-        fetch(`http://localhost:3000/${id}`)
+        fetch(`https://addiction21-api.onrender.com/${id}`)
             .then(response => response.json())
             .then(data => {
                 setTrack(data);

@@ -13,7 +13,7 @@ function Contato() {
     const data = Object.fromEntries(formData.entries());
 
     try {
-      const response = await fetch('http://localhost:3000/contato', {
+      const response = await fetch('https://addiction21-api.onrender.com/contato', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
