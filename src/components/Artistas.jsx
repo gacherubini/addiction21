@@ -1,9 +1,9 @@
 import { FaSoundcloud, FaYoutube, FaInstagram } from "react-icons/fa";
 
-const gui = "public/guilherme.jpg";
-const daluz = "public/daluz.jpg";
-const lorenzet = "public/lorenzet.jpg";
-const doug = "public/doug.jpg";
+const gui = "/guilherme.jpg";
+const daluz = "/daluz.jpg";
+const lorenzet = "/lorenzet.jpg";
+const doug = "/doug.jpg";
 
 const artistas = [
   {

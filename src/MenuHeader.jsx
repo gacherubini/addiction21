@@ -2,7 +2,7 @@ function MenuHeader() {
     return (
         <nav>
             <div className="addictionHomeImage">
-                <a href="#home"><img className="HomeImagem" width={200} src="../../public/addLogo.png" alt="Home" /></a>
+                <a href="#home"><img className="HomeImagem" width={200} src="/addLogo.png" alt="Home" /></a>
             </div>
             <ul>
                 <li>
