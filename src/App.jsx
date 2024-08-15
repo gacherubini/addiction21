@@ -6,6 +6,8 @@ import Equipe from './pages/Equipe';
 import Contato from './pages/Contato';
 import Sobre from './pages/Sobre';
 import News from './pages/News';
+import SpotifyEmbed from './pages/SpotifyEmbed.jsx';
+
 
 
 import './styles/app.css';
@@ -24,11 +26,15 @@ function App() {
                 <Home/>
             </section>
 
+            <section id="embed-section" className="section embed-section">
+                <SpotifyEmbed/>
+            </section>
+
             <section id="news" className="section news-section">
                 <News/>
             </section>
 
-            <section className="sobre-section">
+            <section id='sobre' className="section sobre-section">
                 <Sobre/>
             </section>
 

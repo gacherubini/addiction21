@@ -5,7 +5,6 @@ import { AiFillInstagram } from "react-icons/ai";
 function MenuFooter() {
     return( 
       <footer>
-        <img className="imageLoading" src="public/img.png"/>
         <div>
         <div className="socialMedia-section-footer">
             <a href="https://www.instagram.com/cherubinimusic/">

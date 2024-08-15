@@ -83,6 +83,11 @@ h2 {
   color: white;
 }
 
+.sobre-section{
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 20px 20px;
+}
+
 .contato-section {
   background-color: rgba(255, 255, 255, 0.1);
   color: white;
@@ -203,6 +208,13 @@ p{
   -webkit-transform:scale(1.5);
   transform:scale(1.1);
 }
+
+.socialMedia-section-footer {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
 
 
 
