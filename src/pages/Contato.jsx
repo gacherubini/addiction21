@@ -38,7 +38,7 @@ function Contato() {
 
   return (
       <div className='ContactForm'>
-        <h1>Fale Conosco</h1>
+        <h1>Deixe uma mensagem</h1>
         {statusMessage && <p>{statusMessage}</p>}
         <div className="div-form">
           <form ref={form} onSubmit={sendEmail} className="col">
