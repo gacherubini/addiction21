@@ -7,7 +7,7 @@ function NewsPage() {
     const [error, setError] = useState(null);
     const [news, setNews] = useState([]);
     const [currentPage, setCurrentPage] = useState(1);
-    const itemsPerPage = 3;
+    const itemsPerPage = 2;
 
     useEffect(() => {
         fetch('http://localhost:3000/news')
@@ -36,7 +36,6 @@ function NewsPage() {
     return (
         <div className="div-pagina-news">
             <div className="row coluna-news">
-                <h2>Últimas Notícias:</h2>
                 <div className="div-lista-news"
                      style={{
                          width: "100%",

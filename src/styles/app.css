@@ -15,7 +15,6 @@ body, html {
   font-family: Aeonik, Arial, Helvetica, sans-serif;
   color: gray;
   scroll-behavior: smooth;
-  /*background-image: url("../../public/background.jpg");*/
   background-color: rgba(0, 0, 0, 0.9);
   background-repeat: no-repeat;
   background-size: cover;
@@ -30,9 +29,9 @@ body, html {
   display: flex;
   justify-content: center;
   align-items: center;
-  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.9); /* Sombra suave abaixo da imagem */
-
   box-sizing: border-box;
+  box-shadow:
+          0px 0px 30px rgba(255, 255, 255, 0.3);
 }
 
 .galeria-section img {
@@ -41,7 +40,6 @@ body, html {
   display: block;
   margin: 0;
 }
-
 
 h2 {
   margin:0;
@@ -55,37 +53,17 @@ h2 {
 }
 
 .section {
-  border-radius: 2rem;
-  padding: 0px 20px;
+  border-radius: 4rem;
+  padding: 0px;
   margin: 0 auto;
-  width: calc(100% - 40px);
-  padding-left: 2%;
-  padding-right: 2%;
+  width: 100%;
+  max-width: 1200px;
   margin-bottom: 10%;
   text-align: center;
 }
 
-.home-section {
-  background-color: rgba(255, 255, 255, 0.1);
-  padding: 20px 20px;
-  color: white;
-}
-
 .news-section {
-  background-color: rgba(255, 255, 255, 0.1);
-  padding: 20px 20px;
   color: white;
-}
-
-.equipe-section {
-  background-color: rgba(255, 255, 255, 0.1);
-  padding: 20px 20px;
-  color: white;
-}
-
-.sobre-section{
-  background-color: rgba(255, 255, 255, 0.1);
-  padding: 20px 20px;
 }
 
 .contato-section {
@@ -102,10 +80,10 @@ header {
 }
 
 footer {
-  background-color: transparent;
+  background-color: black;
   margin-top: auto;
   padding-top: 0px;
-  padding-bottom: 40px;
+  padding-bottom: 50px;
   margin-top: 10px;
   margin-bottom: 40px;
   width: 100%;
@@ -211,6 +189,7 @@ p{
 
 .socialMedia-section-footer {
   display: flex;
+  margin-bottom: 20px;
   justify-content: center;
   gap: 30px;
 }
