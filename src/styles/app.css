@@ -80,15 +80,9 @@ header {
 }
 
 footer {
-  background-color: black;
-  margin-top: auto;
-  padding-top: 0px;
   padding-bottom: 50px;
-  margin-top: 10px;
-  margin-bottom: 40px;
   width: 100%;
-  height: 30px;
-  color: black;
+  height: 10px;
 }
 
 nav {
@@ -160,7 +154,6 @@ nav ul li a:hover {
 
 h1{
   font-size: 60px;
-  font-family: 'Aeonik';
   text-align: center;
   text-transform: uppercase;
   color: white;
@@ -170,11 +163,6 @@ p{
   color: white;
   font-weight: 400;
   font-size: 18px;
-}
-
-.SoundCloud{
-  margin:auto;
-  width: 50%;
 }
 
 .HomeImagem{
@@ -189,9 +177,34 @@ p{
 
 .socialMedia-section-footer {
   display: flex;
-  margin-bottom: 20px;
   justify-content: center;
   gap: 30px;
+}
+
+.socialMedia-section-footer a {
+  color: gray;
+  margin: 0 15px;
+  transition: color 0.3s ease;
+}
+
+.socialMedia-section-footer a:hover {
+  color: white;
+}
+
+.mensagemFooter {
+  font-size: 14px;
+  color: gray;
+}
+
+.linkEmail {
+  color: gray;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.linkEmail:hover {
+  color: white;
 }
 
 

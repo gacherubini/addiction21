@@ -7,7 +7,7 @@ function NewsPage() {
     const [error, setError] = useState(null);
     const [news, setNews] = useState([]);
     const [currentPage, setCurrentPage] = useState(1);
-    const itemsPerPage = 2;
+    const itemsPerPage = 3;
 
     useEffect(() => {
         fetch('http://localhost:3000/news')

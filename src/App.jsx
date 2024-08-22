@@ -19,25 +19,13 @@ function App() {
                 <img src="/newImage.png" alt="Descrição da imagem"/>
             </section>
 
-            {/*<section id="home" className="section home-section">*/}
-            {/*    /!*<Home/>*!/*/}
-            {/*</section>*/}
-
-            <section id="embed-section" className="section embed-section">
-                <SpotifyEmbed/>
-            </section>
-
-            {/*<section id="embed-section" className="section embed-section">*/}
-            {/*    <SoundCloudEmbed/>*/}
-            {/*</section>*/}
-
             <section id="news" className="section news-section">
                 <News/>
             </section>
 
-            {/*<section id="contato" className="section contato-section">*/}
-            {/*    /!*<Contato/>*!/*/}
-            {/*</section>*/}
+            <section id="embed-section" className="section embed-section">
+                <SpotifyEmbed/>
+            </section>
             <footer>
                 <MenuFooter/>
             </footer>

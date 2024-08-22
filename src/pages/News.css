@@ -1,52 +1,57 @@
 .div-pagina-news {
-    margin: 20px;
     padding: 0;
     text-align: center;
+    max-width: 1200px;
 }
 
 .div-lista-news {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    gap: 20px;
 }
 
 .track {
-    padding: 0;
-    margin: 10px;
-    flex: 0 0 70%;
-    box-sizing: border-box;
-}
-
-.track-content {
-    background-color: rgba(38, 38, 38, 0.7);
-    color: white;
-    padding: 5px;
     display: flex;
-    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    margin: 10px;
+    flex: 0 0 100%;
+    max-width: 100%;
     box-sizing: border-box;
-    height: 100%;
-    transition: transform 0.25s ease, background-color 0.25s ease;
+    background-color: rgba(38, 38, 38, 0.7);
+    border-radius: 8px;
 }
 
-.track-content-news:hover {
-    transform: scale(1.02);
+.track:hover {
+    transform: scale(1.0010);
     cursor: pointer;
     background-color: #333333;
 }
 
+
+.track img {
+    border-radius: 8px;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+
 .track-content {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     box-sizing: border-box;
-    height: 100%;
-    width: 100%;
-    overflow: hidden;
+    width: calc(100% - 120px);
 }
 
+
 .track-content-descricao {
-    margin: 5px 7px 5px;
-    font-size: 15px;
-    color: gray;
+    margin: 10px 0;
+    font-size: 14px;
+    color: whitesmoke;
     box-sizing: border-box;
     text-align: left;
 }
