@@ -6,7 +6,7 @@ function MenuHeader() {
             </div>
             <ul>
                 <li>
-                    <a className="equipe" href="#equipe">Equipe</a>
+                    <a className="equipe" href="#news">News</a>
                 </li>
                 <li>
                     <a className="contato" href="#contato">Nos envie uma mensagem</a>
