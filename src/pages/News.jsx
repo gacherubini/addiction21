@@ -45,6 +45,7 @@ function NewsPage() {
                     {currentItems.map((newsItem) => (
                         <NewsItem
                             key={newsItem.id}
+                            tittle={newsItem.tittle}
                             id={newsItem.id}
                             imagem={newsItem.imageUrl}
                             descricao={newsItem.content}

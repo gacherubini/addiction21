@@ -26,7 +26,7 @@ function App() {
             <section id="embed-section" className="section embed-section">
                 <SpotifyEmbed/>
             </section>
-            <footer>
+            <footer id="footer">
                 <MenuFooter/>
             </footer>
         </div>

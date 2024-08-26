@@ -7,13 +7,12 @@
 .div-lista-news {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
     gap: 20px;
 }
 
 .track {
     display: flex;
-    align-items: center;
+    justify-content: space-between;
     flex: 0 0 100%;
     max-width: 100%;
     box-sizing: border-box;
@@ -28,25 +27,33 @@
 }
 
 .track img {
-    width: 200px;
-    height: 200px;
+    width: 190px;
+    height: 190px;
     object-fit: cover;
     margin-right: 20px;
 }
 
-
 .track-content {
+    padding-top: 20px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     box-sizing: border-box;
     width: calc(100% - 120px);
 }
 
-
 .track-content-descricao {
     margin: 10px 0;
     font-size: 14px;
+    font-weight: bolder;
+    color: whitesmoke;
+    box-sizing: border-box;
+    text-align: left;
+}
+
+.track-content-titulo{
+    margin: 10px 0;
+    font-size: 24px;
     color: whitesmoke;
     box-sizing: border-box;
     text-align: left;
@@ -58,6 +65,7 @@
     text-decoration: none;
     transition: color 0.3s ease;
     align-self: flex-start;
+    padding-bottom: 5px;
 }
 
 .track-content-link:hover {
