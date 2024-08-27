@@ -1,27 +1,32 @@
 .div-pagina-news {
-    padding: 0;
+    padding: 0 15px; /* Adiciona padding lateral para melhorar o espaçamento em telas menores */
     text-align: center;
     max-width: 1200px;
+    margin: 0 auto;
 }
 
 .div-lista-news {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
+    justify-content: center; /* Centraliza as notícias */
 }
 
 .track {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     flex: 0 0 100%;
     max-width: 100%;
     box-sizing: border-box;
     background-color: rgba(38, 38, 38, 0.7);
     border-radius: 18px;
+    padding: 10px; /* Adiciona um pouco de padding para melhorar a apresentação */
+    transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
 .track:hover {
-    transform: scale(1.0010);
+    transform: scale(1.01); /* Aumenta ligeiramente o zoom no hover */
     cursor: pointer;
     background-color: #333333;
 }
@@ -34,12 +39,12 @@
 }
 
 .track-content {
-    padding-top: 20px;
+    padding-top: 10px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     box-sizing: border-box;
-    width: calc(100% - 120px);
+    width: calc(100% - 220px);
 }
 
 .track-content-descricao {
@@ -91,4 +96,54 @@
 
 .pagination button:hover {
     background-color: #555;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .track {
+        flex-direction: column; /* Empilha a imagem e o conteúdo em telas menores */
+        align-items: center;
+        text-align: center;
+        padding: 15px; /* Adiciona padding para melhorar o espaçamento */
+    }
+
+    .track img {
+        width: 100%;
+        height: auto;
+        margin-right: 0;
+        margin-bottom: 15px; /* Adiciona margem inferior para espaçamento */
+    }
+
+    .track-content {
+        width: 100%; /* Faz o conteúdo ocupar 100% da largura */
+        padding: 0; /* Remove padding superior para centralizar melhor */
+    }
+
+    .track-content-titulo {
+        font-size: 20px; /* Reduz ligeiramente o tamanho do título */
+    }
+
+    .track-content-descricao {
+        font-size: 14px;
+        margin: 0 0 15px 0;
+    }
+
+    .track-content-link {
+        margin-top: 10px;
+        align-self: center; /* Centraliza o link */
+    }
+}
+
+@media (max-width: 480px) {
+    .track-content-titulo {
+        font-size: 18px; /* Reduz mais um pouco o tamanho do título */
+    }
+
+    .track-content-descricao {
+        font-size: 12px;
+    }
+
+    .track-content-link {
+        font-size: 14px;
+    }
 }
