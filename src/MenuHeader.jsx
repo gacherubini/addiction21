@@ -9,7 +9,7 @@ function MenuHeader() {
                     <a className="equipe" href="#news">News</a>
                 </li>
                 <li>
-                    <a className="contato" href="#footer">Envie uma mensagem</a>
+                    <a className="contato" href="#footer">Contato</a>
                 </li>
             </ul>
         </nav>
