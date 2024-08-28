@@ -30,7 +30,7 @@ body, html {
   justify-content: center;
   align-items: center;
   box-sizing: border-box;
-  box-shadow:
+  box-shadsow:
           0px 0px 30px rgba(255, 255, 255, 0.3);
 }
 
@@ -57,7 +57,7 @@ h2 {
   padding: 0px;
   margin: 0 auto;
   width: 100%;
-  max-width: 1200px;
+  max-width: 95%;
   margin-bottom: 10%;
   text-align: center;
 }
@@ -207,26 +207,11 @@ p{
 }
 
 @media only screen and (max-width: 480px) {
-  h1 {
-    font-size: 32px;
-  }
-
-  h2 {
-    font-size: 20px;
-  }
-
-  p {
-    font-size: 14px;
-  }
-
-  header {
-    height: 60px;
-  }
-
   nav ul {
     flex-direction: column;
     align-items: center;
     margin-top: 5px;
+    margin-right: 5px;
   }
 
   nav ul li {
@@ -235,11 +220,28 @@ p{
   }
 
   .section {
-    padding: 0 5px;
+    border-radius: 4rem;
+    width: 100%;
+    max-width: 90%;
+    text-align: center;
   }
 
-  .socialMedia-section-footer {
+}
+
+@media only screen and (max-width: 768px) {
+  h1 {
+    font-size: 28px;
+  }
+
+  nav ul {
     flex-direction: column;
-    gap: 10px;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+
+  .container {
+    width: 95%;
   }
 }

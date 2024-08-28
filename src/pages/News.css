@@ -1,5 +1,5 @@
 .div-pagina-news {
-    padding: 0 15px; /* Adiciona padding lateral para melhorar o espaçamento em telas menores */
+    padding: 0 15px;
     text-align: center;
     max-width: 1200px;
     margin: 0 auto;
@@ -9,7 +9,7 @@
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
-    justify-content: center; /* Centraliza as notícias */
+    justify-content: center;
 }
 
 .track {
@@ -21,12 +21,12 @@
     box-sizing: border-box;
     background-color: rgba(38, 38, 38, 0.7);
     border-radius: 18px;
-    padding: 10px; /* Adiciona um pouco de padding para melhorar a apresentação */
+    padding: 10px;
     transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
 .track:hover {
-    transform: scale(1.01); /* Aumenta ligeiramente o zoom no hover */
+    transform: scale(1.01);
     cursor: pointer;
     background-color: #333333;
 }
@@ -48,7 +48,6 @@
 }
 
 .track-content-descricao {
-    margin: 10px 0;
     font-size: 14px;
     font-weight: bolder;
     color: whitesmoke;
@@ -57,7 +56,6 @@
 }
 
 .track-content-titulo{
-    margin: 10px 0;
     font-size: 24px;
     color: whitesmoke;
     box-sizing: border-box;
@@ -98,7 +96,6 @@
     background-color: #555;
 }
 
-/* Responsividade */
 @media (max-width: 768px) {
     .track {
         flex-direction: column; /* Empilha a imagem e o conteúdo em telas menores */
@@ -116,7 +113,7 @@
 
     .track-content {
         width: 100%; /* Faz o conteúdo ocupar 100% da largura */
-        padding: 0; /* Remove padding superior para centralizar melhor */
+        padding: 0;
     }
 
     .track-content-titulo {
@@ -125,7 +122,6 @@
 
     .track-content-descricao {
         font-size: 14px;
-        margin: 0 0 15px 0;
     }
 
     .track-content-link {
@@ -135,15 +131,52 @@
 }
 
 @media (max-width: 480px) {
-    .track-content-titulo {
-        font-size: 18px; /* Reduz mais um pouco o tamanho do título */
+    .track {
+        flex-direction: row;
+        align-items: center;
+        text-align: left;
+        padding: 10px; /* Adiciona padding para espaçamento interno */
+        margin: 5px 0; /* Ajusta as margens para economizar espaço */
+        background-color: rgba(38, 38, 38, 0.7); /* Garante a cor de fundo */
+        border-radius: 10px; /* Arredonda as bordas */
+        transition: transform 0.3s ease, background-color 0.3s ease;
+        width: 100%;
     }
 
-    .track-content-descricao {
-        font-size: 12px;
+    .track img {
+        width: 150px;
+        height: 150px;
+        margin-right: 10px;
     }
 
     .track-content-link {
-        font-size: 14px;
+        color: yellow;
+        text-decoration: none;
+        transition: color 0.3s ease;
+        align-self: flex-start;
+    }
+
+
+    .track-content {
+        width: calc(100% - 120px);
+        padding-top: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .track-content-titulo {
+        font-size: 16px;
+    }
+
+    .track-content-descricao {
+        font-size: 12px; /* Diminui o tamanho da descrição */
+    }
+
+    .track-content-link {
+        color: yellow;
+        text-decoration: none;
+        transition: color 0.3s ease;
+        align-self: flex-start;
     }
 }
