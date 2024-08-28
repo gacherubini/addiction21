@@ -30,7 +30,7 @@ function NewsPage() {
         setCurrentPage(pageNumber);
     };
 
-    if (loading) return <img className="imageLoading" src={"public/loading.gif"} alt="Loading..."/>;
+    if (loading) return <img className="imageLoading" src={"loading.gif"} alt="Loading..."/>;
     if (error) return <p className="errorMensagem">Erro ao carregar as notícias.</p>;
 
     return (
