@@ -97,24 +97,21 @@ h1.track-content-titulo{
 
 @media (max-width: 768px) {
     .track {
-        flex-direction: column; /* Empilha a imagem e o conteúdo em telas menores */
-        align-items: center;
-        text-align: center;
-        padding: 15px; /* Adiciona padding para melhorar o espaçamento */
-    }
-
-    .track img {
+        display: flex;
+        flex-direction: row;
+        text-align: left;
+        padding: 10px 10px;
+        background-color: rgba(38, 38, 38, 0.7);
+        border-radius: 10px;
+        transition: transform 0.3s ease, background-color 0.3s ease;
         width: 100%;
-        height: auto;
-        margin-right: 0;
-        margin-bottom: 15px; /* Adiciona margem inferior para espaçamento */
     }
 
     .track-content {
-        width: 100%; /* Faz o conteúdo ocupar 100% da largura */
-        padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start; /* Alinha o conteúdo ao topo */
     }
-
     .track-content-titulo {
         font-size: 20px; /* Reduz ligeiramente o tamanho do título */
     }
@@ -123,10 +120,6 @@ h1.track-content-titulo{
         font-size: 14px;
     }
 
-    .track-content-link {
-        margin-top: 10px;
-        align-self: center; /* Centraliza o link */
-    }
 }
 
 @media (max-width: 480px) {
@@ -140,7 +133,6 @@ h1.track-content-titulo{
         transition: transform 0.3s ease, background-color 0.3s ease;
         width: 100%;
     }
-
 
     .track-content {
         display: flex;
@@ -174,17 +166,20 @@ h1.track-content-titulo{
 
 @media (min-width: 1024px) {
     .track {
-        padding: 30px;
+        display: flex;
         flex-direction: row;
-        align-items: center;
-        justify-content: flex-start;
+        text-align: left;
+        padding: 10px 10px;
+        background-color: rgba(38, 38, 38, 0.7);
+        border-radius: 10px;
+        transition: transform 0.3s ease, background-color 0.3s ease;
         width: 100%;
     }
 
-    .track img {
-        width: 250px;
-        height: 250px;
-        margin-right: 30px;
+    .track-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start; /* Alinha o conteúdo ao topo */
     }
 
     h1.track-content-titulo {

@@ -203,16 +203,25 @@ p{
 }
 
 @media only screen and (max-width: 480px) {
-  nav ul {
-    flex-direction: column;
+  nav {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
     align-items: center;
-    margin-top: 5px;
-    margin-right: 5px;
+    text-decoration: none;
+  }
+
+  nav ul {
+    list-style-type: none;
+    overflow: hidden;
+    display: flex;
+    margin-top: 35px;
   }
 
   nav ul li {
-    margin: 8px 0;
-    font-size: 14px;
+    margin-right: 20px;
+    color: black;
+    font-size: 18px;
   }
 
   .section {
@@ -221,8 +230,8 @@ p{
     max-width: 90%;
     text-align: center;
   }
-
 }
+
 
 @media only screen and (max-width: 768px) {
   h1 {
