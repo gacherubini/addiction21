@@ -14,8 +14,6 @@
 
 .track {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
     flex: 0 0 100%;
     max-width: 100%;
     box-sizing: border-box;
@@ -39,17 +37,13 @@
 }
 
 .track-content {
-    padding-top: 10px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    box-sizing: border-box;
-    width: calc(100% - 220px);
+    justify-content:space-between;
 }
 
-.track-content-descricao {
+p.track-content-descricao {
     font-size: 14px;
-    font-weight: bolder;
     color: whitesmoke;
     box-sizing: border-box;
     text-align: left;
@@ -60,11 +54,11 @@
     text-overflow: ellipsis;
 }
 
-.track-content-titulo{
-    font-size: 24px;
+h1.track-content-titulo{
+    font-size: 20px;
     color: whitesmoke;
-    box-sizing: border-box;
-    text-align: left;
+    font-weight: bolder;
+    text-align: start;
 }
 
 .track-content-link {
@@ -137,13 +131,12 @@
 
 @media (max-width: 480px) {
     .track {
+        display: flex;
         flex-direction: row;
-        align-items: center;
         text-align: left;
-        padding: 10px; /* Adiciona padding para espaçamento interno */
-        margin: 5px 0; /* Ajusta as margens para economizar espaço */
-        background-color: rgba(38, 38, 38, 0.7); /* Garante a cor de fundo */
-        border-radius: 10px; /* Arredonda as bordas */
+        padding: 10px 10px;
+        background-color: rgba(38, 38, 38, 0.7);
+        border-radius: 10px;
         transition: transform 0.3s ease, background-color 0.3s ease;
         width: 100%;
     }
@@ -154,28 +147,13 @@
         margin-right: 10px;
     }
 
-    .track-content-link {
-        color: yellow;
-        text-decoration: none;
-        transition: color 0.3s ease;
-        align-self: flex-start;
-    }
-
-
     .track-content {
-        width: calc(100% - 120px);
-        padding-top: 0;
         display: flex;
-        flex-direction: column;
         justify-content: space-between;
     }
 
-    .track-content-titulo {
-        font-size: 16px;
-    }
-
     .track-content-descricao {
-        font-size: 12px; /* Diminui o tamanho da descrição */
+        font-size: 12px;
     }
 
     .track-content-link {
