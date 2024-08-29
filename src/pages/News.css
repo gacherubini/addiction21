@@ -171,3 +171,31 @@ h1.track-content-titulo{
         align-self: flex-start;
     }
 }
+
+@media (min-width: 1024px) {
+    .track {
+        padding: 30px;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        width: 100%;
+    }
+
+    .track img {
+        width: 250px;
+        height: 250px;
+        margin-right: 30px;
+    }
+
+    h1.track-content-titulo {
+        font-size: 26px;
+    }
+
+    p.track-content-descricao {
+        font-size: 18px;
+    }
+
+    .pagination {
+        margin-top: 30px;
+    }
+}

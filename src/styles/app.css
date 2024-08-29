@@ -87,6 +87,8 @@ footer {
 nav {
   margin-bottom: 20px;
   display: flex;
+  justify-content: center;
+  align-items: center;
   text-decoration: none;
 }
 
@@ -95,7 +97,6 @@ nav ul {
   overflow: hidden;
   display: flex;
   margin-top: 35px;
-  margin-left: auto;
 }
 
 nav ul li {
@@ -117,11 +118,6 @@ nav ul li a {
 
 nav ul li a:hover {
   color: white;
-}
-
-.addictionHomeImage{
-  padding-left: 20px;
-  margin-top: 20px;
 }
 
 .imageLoading{
