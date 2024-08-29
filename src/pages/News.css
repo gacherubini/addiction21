@@ -71,7 +71,7 @@ h1.track-content-titulo{
 }
 
 .track-content-link:hover {
-    color: green;
+    color: yellow;
 }
 
 .pagination {
@@ -150,8 +150,8 @@ h1.track-content-titulo{
 
     h1.track-content-titulo {
         font-size: 16px;
-        margin: 0 0 30px 0; /* Diminui a margem inferior para subir o título */
-        padding: 0; /* Remove qualquer padding para posicionar o título mais para cima */
+        margin: 0 0 30px 0;
+        padding: 0;
     }
 
     .track img {
