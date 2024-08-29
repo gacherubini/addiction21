@@ -16,7 +16,7 @@ function App() {
                 <MenuHeader/>
             </header>
             <section id="galeria" className="section galeria-section">
-                <img src="/newImage.png" alt="Descrição da imagem"/>
+                <img src="/headerImage.png" alt="Descrição da imagem"/>
             </section>
 
             <section id="news" className="section news-section">
