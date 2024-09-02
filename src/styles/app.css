@@ -85,40 +85,39 @@ footer {
 }
 
 nav {
-  margin-bottom: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
-  text-decoration: none;
+  height: 100px;
 }
 
 nav ul {
-  list-style-type: none;
-  overflow: hidden;
-  display: flex;
-  margin-top: 35px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
 }
 
 nav ul li {
-  margin-right: 20px;
-  color: black;
-  font-size: 18px;
-}
-
-nav ul li:hover{
-  font-size: 20px;
-  transition: 0.8s;
+  display: inline-block;
+  margin: 0 10px;
 }
 
 nav ul li a {
-  color: rgb(234, 234, 234);
+  color: white;
   text-decoration: none;
-  font-weight: bold;
+  padding: 0 10px;
+  display: inline-block;
+  font-size: 18px;
+  transition: font-size 0.3s ease, color 0.3s ease;
 }
 
 nav ul li a:hover {
-  color: white;
+  font-size: 20px;
+  color: #f0f0f0;
+  text-decoration: none; /* Garante que o sublinhado não apareça no hover */
+
 }
+
 
 .imageLoading{
   width: 80px;
@@ -139,7 +138,6 @@ nav ul li a:hover {
   font-size: 15px;
   margin: 0;
   padding: 0;
-  padding-bottom: 5px;
 }
 
 .linkEmail{
@@ -203,31 +201,10 @@ p{
 }
 
 @media only screen and (max-width: 480px) {
-  nav {
-    margin-bottom: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-  }
-
-  nav ul {
-    list-style-type: none;
-    overflow: hidden;
-    display: flex;
-    margin-top: 35px;
-  }
-
-  nav ul li {
-    margin-right: 20px;
-    color: black;
-    font-size: 18px;
-  }
 
   .section {
     border-radius: 4rem;
     width: 100%;
-    max-width: 90%;
     text-align: center;
   }
 }

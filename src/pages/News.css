@@ -137,7 +137,7 @@ h1.track-content-titulo{
     .track-content {
         display: flex;
         flex-direction: column;
-        justify-content: flex-start; /* Alinha o conteúdo ao topo */
+        justify-content: flex-start;
     }
 
     h1.track-content-titulo {
