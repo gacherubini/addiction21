@@ -234,7 +234,7 @@ p{
   }
 }
 
-@media (min-width: 1001px) {
+@media (min-width: 1002px) {
   nav ul li a {
     font-size: 24px;
   }
