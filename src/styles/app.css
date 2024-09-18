@@ -107,7 +107,7 @@ nav ul li a {
   padding: 0 10px;
   display: inline-block;
   font-size: 14px;
-  transition: font-size 0.3s ease, color 0.3s ease;
+  transition: font-size 0.3s ease, color 0.2s ease;
 }
 
 nav ul li a:hover {

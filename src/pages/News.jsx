@@ -10,7 +10,7 @@ function NewsPage() {
     const itemsPerPage = 3;
 
     useEffect(() => {
-        fetch('https://addiction21-api.onrender.com/news')
+        fetch('http://localhost:3000/news')
             .then((response) => response.json())
             .then((data) => {
                 setNews(data);
